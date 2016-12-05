@@ -1,0 +1,57 @@
+Running a file
+================
+using sh command
+1. We can directly run the file
+ sh example.sh
+ sh example
+
+2. using ./ 
+
+  * For that we need to be in the directory where the file resides.
+  * set executable permisiion using
+    chmod +x file name.
+  * File can be run as follows, 
+     ./example.sh
+     ./basic 
+                                
+  
+ Exit Status
+=============
+Whenever a command is run its success status can be determined using its exit status value
+ 0 -------> Success
+ 1 -------> Failure
+
+eg : mv demo.txt test.txt
+     echo $? 
+     Display  0 if the file is already there
+     Otherwise iyt would display 1
+     
+Variables
+===============
+
+1. System Varibales or Environment variables
+   Not supposed to change without any valid reason
+   printenv ---This command will display all Env variables
+
+2. USer Defined Variables
+
+3. Multi line comments
+    <<"COMMENT"
+    This long comment text includes ${parameter:=expansion}
+    `command substitution` and $((arithmetic++ + --expansion)).
+    COMMENT   
+
+4. Expressions
+   
+   s=`expr 1 + 3`
+   echo $s
+
+(  Back quotes NOT single quotes, and also spaces on either sides of + is important)
+But the preferable way to do this :
+
+t=$(( 1+3 ))         /* here spaces are not at all important , if we want we can give them* /
+echo $t
+
+5 Quotes
+
+

@@ -1,0 +1,2 @@
+mv asd.txt asdnew.txt
+echo $?

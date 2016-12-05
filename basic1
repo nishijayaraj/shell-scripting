@@ -1,0 +1,6 @@
+# 
+# My first shell script
+#
+echo "**********"
+clear
+echo "Knowledge is Power"

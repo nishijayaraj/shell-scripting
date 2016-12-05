@@ -1,0 +1,12 @@
+#example for variables
+# Don't put spaces on either side of the equal sign when assigning value to variable
+no=5
+echo $no
+echo "The number is $n"
+
+echo "NULL varable declarations"
+v2=  #NULL varaibles
+echo $v2
+
+v3=""  #NULL varaibles
+echo $v3
