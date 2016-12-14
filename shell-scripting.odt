@@ -1,4 +1,4 @@
-Running a file
+﻿Running a file
 ================
 using sh command
 1. We can directly run the file
@@ -54,4 +54,46 @@ echo $t
 
 5 Quotes
 
+
+
+
+
+
+
+6. If -else
+if [ expression ]
+then
+   Statement(s) to be executed if expression is true
+else
+   Statement(s) to be executed if expression is not true
+fi
+
+
+
+The indentation is very important.
+
+The semicolon is needed only when the end of line is missing:
+if [ "a" == "a" ] ; then echo "true" ; fi
+Without semicolons, you get Syntax error.
+
+
+7. Multi level if-else
+
+if condition
+           then
+                       condition is zero (true - 0)
+                       execute all commands up to elif statement
+           elif condition1 
+           then
+                       condition1 is zero (true - 0)
+                       execute all commands up to elif statement  
+           elif condition2
+           then
+                       condition2 is zero (true - 0)
+                       execute all commands up to elif statement          
+           else
+                       None of the above condtion,condtion1,condtion2 are true (i.e. 
+                       all of the above nonzero or false)
+                       execute all commands up to fi
+           fi
 
